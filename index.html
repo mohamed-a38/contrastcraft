@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ContrastCraft — Colour Contrast Checker</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body><main>
+<header><p class="eyebrow">ACCESSIBLE WEB DESIGN</p><h1>ContrastCraft</h1><p>Check text contrast against WCAG guidelines, preview colours and keep useful palettes.</p></header>
+<div class="grid"><section><h2>Choose your colours</h2>
+<label for="foreground">Text colour</label><div class="inputs"><input id="foreground" type="color" value="#17324d"><input id="foregroundHex" aria-label="Text hexadecimal colour" value="#17324D" maxlength="7"></div>
+<label for="background">Background colour</label><div class="inputs"><input id="background" type="color" value="#f5f9fd"><input id="backgroundHex" aria-label="Background hexadecimal colour" value="#F5F9FD" maxlength="7"></div>
+<div class="buttons"><button id="swap">Swap colours</button><button id="random">Random palette</button></div><p role="alert" id="inputError"></p></section>
+<section><h2>Live preview</h2><div id="preview" class="preview"><p>EXAMPLE INTERFACE</p><h3>Good design is readable.</h3><p>Accessible colours help everyone use the web.</p></div>
+<div class="report"><p>Contrast ratio: <strong id="ratio"></strong></p><p>Normal text: <strong id="normalRating"></strong></p><p>Large text: <strong id="largeRating"></strong></p><p>AAA normal text: <strong id="aaaRating"></strong></p></div><p class="hint">WCAG AA: 4.5:1 for normal text, 3:1 for large text. AAA normal text: 7:1.</p><button id="save">Save palette</button></section></div>
+<section class="saved"><div class="heading"><h2>Saved palettes</h2><button id="clear">Clear saved</button></div><p class="hint">Stored only on your device, not on a server.</p><ul id="palettes"></ul></section>
+<footer>Independent accessibility project • HTML, CSS and JavaScript</footer></main></body></html>
